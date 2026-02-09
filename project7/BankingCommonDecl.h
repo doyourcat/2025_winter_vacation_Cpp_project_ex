@@ -1,5 +1,5 @@
 #pragma once
-#ifdef __BANKING_COMMON_H__
+#ifndef __BANKING_COMMON_H__
 #define __BANKING_COMMON_H__
 
 #include <iostream>

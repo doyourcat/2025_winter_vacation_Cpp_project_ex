@@ -1,6 +1,6 @@
 #pragma once
-#ifndef __ACCOUNT_H__
-#define __ACCOUNT_H__
+#ifndef __NORMAL_ACCOUNT_H__
+#define __NORMAL_ACCOUNT_H__
 
 #include "Account.h"
 

@@ -127,7 +127,7 @@ void AccountHandler::ShowAllAccInfo(void) const //배열에 저장된 정보를 보여달라�
 {
 	for (int i = 0; i < accNum; i++)
 	{
-		accArr[i]->showAccInfo();
+		accArr[i]->ShowAccInfo();
 		cout << endl;
 	}
 }

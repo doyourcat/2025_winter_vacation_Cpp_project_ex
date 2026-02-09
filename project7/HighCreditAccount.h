@@ -1,5 +1,5 @@
 #pragma once
-#ifdef __HIGHCREDIT_ACCOUNT_H__
+#ifndef __HIGHCREDIT_ACCOUNT_H__
 #define  __HIGHCREDIT_ACCOUNT_H__
 
 #include "NormalAccount.h"
