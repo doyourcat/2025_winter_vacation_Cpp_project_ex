@@ -33,34 +33,32 @@ void AccountHandler::MakeAccount(void)
 void AccountHandler::MakeNormalAccount(void)
 {
 	int id;
-	// char name[NAME_LEN];
 	String name;
-	int balance;
+	int total_money;
 	int interRate;
 
 	cout << "[보통예금계좌 개설]" << endl;
 	cout << "계좌ID: ";	cin >> id;
 	cout << "이  름: ";	cin >> name;
-	cout << "입금액: ";	cin >> balance;
+	cout << "입금액: ";	cin >> total_money;
 	cout << "이자율: ";	cin >> interRate;
 	cout << endl;
 
-	accArr[accNum++] = new NormalAccount(id, balance, name, interRate);
+	accArr[accNum++] = new NormalAccount(id, total_money, name, interRate);
 }
 
 void AccountHandler::MakeCreditAccount(void)
 {
 	int id;
-	// char name[NAME_LEN];
 	String name;
-	int balance;
+	int total_money;
 	int interRate;
 	int creditLevel;
 
 	cout << "[신용신뢰계좌 개설]" << endl;
 	cout << "계좌ID: ";	cin >> id;
 	cout << "이  름: ";	cin >> name;
-	cout << "입금액: ";	cin >> balance;
+	cout << "입금액: ";	cin >> total_money;
 	cout << "이자율: ";	cin >> interRate;
 	cout << "신용등급(1toA, 2toB, 3toC): ";	cin >> creditLevel;
 	cout << endl;
@@ -68,13 +66,13 @@ void AccountHandler::MakeCreditAccount(void)
 	switch (creditLevel)
 	{
 	case 1:
-		accArr[accNum++] = new HighCreditAccount(id, balance, name, interRate, LEVEL_A);
+		accArr[accNum++] = new HighCreditAccount(id, total_money, name, interRate, LEVEL_A);
 		break;
 	case 2:
-		accArr[accNum++] = new HighCreditAccount(id, balance, name, interRate, LEVEL_B);
+		accArr[accNum++] = new HighCreditAccount(id, total_money, name, interRate, LEVEL_B);
 		break;
 	case 3:
-		accArr[accNum++] = new HighCreditAccount(id, balance, name, interRate, LEVEL_C);
+		accArr[accNum++] = new HighCreditAccount(id, total_money, name, interRate, LEVEL_C);
 	}
 }
 

@@ -1,9 +1,10 @@
+
 #pragma once
 
 #ifndef __STRING_H__
 #define __STRING_H__
 
-#include "BankingCommonDecl.h";
+#include "BankingCommonDecl.h"
 
 class String
 {
@@ -13,9 +14,9 @@ private:
 public:
 	String();
 	String(const char* s);
-	Stirng(const String& s);
+	String(const String& s);
 	~String();
-	String operator= (const String& s);
+	String& operator= (const String& s);
 	String& operator+=(const String& s);
 	bool operator== (const String& s);
 	String operator+ (const String& s);

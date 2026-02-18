@@ -3,14 +3,14 @@
 #define __HIGHCREDIT_ACCOUNT_H__
 
 #include "NormalAccount.h"
-#include "String.h"
+#include "String.h" //생성자의 매개변수 때문에 필요 HighCreditAccount(int ID, int money, String name .....
 
 class HighCreditAccount : public NormalAccount
 {
 private:
 	int specialRate;
 public:
-	// HighCreditAccount(int ID, int money, char * name, int rate, int special)
+	
 	HighCreditAccount(int ID, int money, String name, int rate, int special)
 		: NormalAccount(ID, money, name, rate), specialRate(special)
 	{
